@@ -1,11 +1,13 @@
 {
   "name": "Telegrambot",
   "version": "1.0.0",
+  "description": "Bot Telegram multifonction: vidéo, musique, suppression de fond, IA, menu, bots WhatsApp",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "axios": "^1.6.6",
     "telegraf": "^4.14.2",
     "ytdl-core": "^4.10.3",
     "yt-search": "^2.10.6"
