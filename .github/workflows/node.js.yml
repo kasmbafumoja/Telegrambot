@@ -1,0 +1,29 @@
+name: Run Telegrambot
+
+on:
+  push:
+    branches:
+      - main   # Déploie à chaque push sur la branche main
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Récupérer le code du dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Installer Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 3️⃣ Installer les dépendances
+      - name: Install dependencies
+        run: npm install
+
+      # 4️⃣ Lancer le bot
+      - name: Run bot
+        run: node index.js
