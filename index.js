@@ -106,4 +106,4 @@ bot.command("music", async (ctx) => {
 
 // Lancement du bot
 bot.launch();
-console.log("🤖 Bot multifonction lancé !");
+console.log("🤖 Telegrambot lancé !");
